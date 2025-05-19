@@ -34,6 +34,10 @@ li{
     flex: 1;
 }
 
+.container{
+    padding: 50px 0;
+}
+
 .row{
     width: 100%;
     max-width: 800px;
@@ -44,7 +48,9 @@ li{
     color: #603061;
 }
 
-
+.section:nth-child(even){
+    background-color: #f8f8f8;
+}
 
 /*NAVIGATION BAR*/
 
