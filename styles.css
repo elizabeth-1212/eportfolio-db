@@ -52,6 +52,10 @@ li{
     background-color: #f8f8f8;
 }
 
+.section__title{
+    margin-bottom: 20px;
+}
+
 /*NAVIGATION BAR*/
 
 nav{
@@ -159,5 +163,33 @@ nav{
 }
 
 .about-me__img{
+    width: 100%;
+
+    /*my addition*/
+
+    margin-top: 50px;
+}
+
+
+/*TECH STACK*/
+
+
+.language__img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.language{
+    width: 25%;
+}
+
+.language__img--wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.language__list{
+    display: flex;
     width: 100%;
 }
