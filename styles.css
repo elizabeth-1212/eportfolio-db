@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6, span{
     color: #242424;
     text-align: center;
@@ -20,6 +24,24 @@ h1{
 p{
     line-height: 1.5;
     font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+}
+
+.link__hover-effect:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    width: 0;
+    bottom: -3px;
+}
+
+.link__hover-effect:hover:after{
+    width: 100%;
 }
 
 li{
@@ -306,4 +328,57 @@ nav{
 .project__description--link{
     text-align: left;
     color: #fff;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #242424;
+}
+
+.footer__social--list{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.footer__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+}
+
+.footer__logo--img{
+    width: 70px;
+    height: 70px;
+}
+
+.footer__social--list,
+.footer__copyright,
+.footer__logo--popper{
+    color: #fff;
+}
+
+
+.footer__logo--popper{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__anchor:hover .footer__logo--popper{
+    transform: translateX(60px);
+    opacity: 1;
 }
